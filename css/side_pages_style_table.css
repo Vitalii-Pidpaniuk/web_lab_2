@@ -293,11 +293,12 @@ table{
   background-color: #333;
   color: white;
   padding: 3%;
-
 }
 
 
 .footer_item{
+  text-align: right;
+  right: 0;
   align-self: end;
   justify-self: end;
   padding: 5px;
