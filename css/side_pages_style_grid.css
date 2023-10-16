@@ -82,10 +82,14 @@ body {
 .content {
   width: fit-content;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 8.25% auto 11.5%;
+  grid-template-rows: auto fit-content auto;
+  font-size: 18px;
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: auto;
   display: grid;
@@ -103,16 +107,9 @@ body {
   width: 20px;
 }
 
-.navbar .home_button{
-  display-row: grid;
-  width: 1fr;
-  text-align: center;
-  align-items: center;
-}
-
-.navbar a, .home_button {
+.navbar a{
   color: white;
-  padding: 14px 20px;
+  padding: 14px 0px;
   text-decoration: none;
   text-align: center;
 }
@@ -131,37 +128,33 @@ body {
 
 .block2 {
   grid-row: 2/4;
-  align-items: center;
-  padding: 1.5%;
+  width: 100%;
+  min-width: fit-content;
+  padding: 5%;
   background-color: #3E3F43;
 }
 
 .block2 a {
-  margin: 15px;
+  display: grid;
   justify-content: center;
   align-items: center;
-/*  background-color: #fff;*/
-  border-radius: 20px;
-  height: 40px;
-  width: 40px;
-  margin-top: 20px;
-  margin: 20px;
+  background-color: #fff;
+  border-radius: 17.5px;
+  width: 35px;
+  height: 35px;
+  margin: 28% 35%;
 }
 
 .block2 img {
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  height: 40px;
-  width: 40px;
-  margin-top: 20px;
-  margin: 20px;
+  height: 25px;
+  width: 25px;
 }
 
 .block3 {
+  font-size: 18px;
   grid-column: 2/4;
-  font-size: 20px;
-  padding: 20px;
+  padding: 10px;
+  line-height: 30px;
   background-color: gold;
   text-align: right;
 }
@@ -169,7 +162,7 @@ body {
 .block4 {
   grid-row: 3/4;
   display: grid;
-/*  grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 1fr 1fr;
   padding: 5%;
   margin: 2%;
   background-color: white;
@@ -178,7 +171,6 @@ body {
 
 
 .block4 img{
-/*  min-width: fit-content;*/
   grid-column: 1/2;
   border: 1px solid rgb(220, 220, 220);
   padding: 2%;
@@ -249,8 +241,6 @@ body {
 
 .price{
   border: 1px solid rgb(220, 220, 220);
-  justify-content: space-between;
-  align-items: center;
   border-radius: 15px;
   margin: 10%;
   padding: 10%;
@@ -258,7 +248,6 @@ body {
 }
 .price b{
   font-size: 30px;
-  padding: 10px;
 }
 
 .price a{
@@ -285,15 +274,18 @@ body {
   background-color: rgb(64, 200, 40);
 }
 
-
 .block5 {
+
+  flex-direction: none;
+  font-size: 18px;
   grid-row: 3/4;
-  background-color: white;
-/*  width: 100px;*/
+  font-size: 100%;
+  color: white;
   background-color: #3E3F43;
-  padding: 20px;
+  padding: 10%;
   color: #fff;
   line-height: 30px;
+  overflow-wrap: break-word;
 }
 
 
